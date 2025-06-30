@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { supabase } from "@/lib/supabase/client";
+import Link from "next/link";
 
 export default function Home() {
   const [email, setEmail] = useState('');
@@ -19,7 +20,6 @@ export default function Home() {
       return;
     }
 
-    // Check if email already exists
     const { data: existing, error: fetchError } = await supabase
       .from('waitlist')
       .select('email')
@@ -38,7 +38,6 @@ export default function Home() {
       return;
     }
 
-    // Insert new entry
     const { data, error } = await supabase
       .from('waitlist')
       .insert([{ email, username }]);
@@ -52,12 +51,12 @@ export default function Home() {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-16 px-4 text-center">
+    <div className="max-w-md mx-auto pt-16 px-4 text-center flex flex-col min-h-screen">
       
       {/* Logo */}
       <div className="flex justify-center mb-6">
         <Image
-          src="/logo-512x512.png" // Place your logo file in the /public folder as logo.png
+          src="/logo-512x512.png"
           alt="Brainstorm AI Logo"
           width={64}
           height={64}
@@ -99,6 +98,19 @@ export default function Home() {
           {error && <p className="text-red-500 text-sm">{error}</p>}
         </form>
       )}
+
+      {/* Footer */}
+      <footer className="mt-auto pt-4 pb-4 text-sm text-gray-500 border-t border-gray-200 dark:border-gray-700">
+        <div className="flex justify-center space-x-6">
+          <Link href="/privacy-policy" className="hover:text-blue-600">
+            Privacy Policy
+          </Link>
+          <Link href="/terms-and-conditions" className="hover:text-blue-600">
+            Terms & Conditions
+          </Link>
+        </div>
+        <p className="mt-4">&copy; {new Date().getFullYear()} Brainstorm AI. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
