@@ -2,7 +2,7 @@
 
 export default function TermsAndConditions() {
   return (
-    <main className="max-w-4xl mx-auto my-16 px-4 sm:px-6 lg:px-8 prose prose-slate dark:prose-invert">
+    <main className="max-w-4xl mx-auto my-16 px-4 sm:px-6 lg:px-8 prose text-gray-900 dark:text-gray-100">
       <h1 className="mb-8">Terms and Conditions</h1>
       <p className="text-sm text-gray-500 mb-8">Last updated: June 30, 2025</p>
 
