@@ -55,7 +55,7 @@ export default function Home() {
       {/* Logo */}
       <div className="flex justify-center mb-6">
         <Image
-          src="/logo-512x512.png"
+          src="/brainstorm-white-blue.svg"
           alt="Brainstorm AI Logo"
           width={64}
           height={64}
