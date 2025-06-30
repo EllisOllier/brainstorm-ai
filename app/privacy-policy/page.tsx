@@ -1,6 +1,6 @@
 export default function PrivacyPolicy() {
   return (
-    <main className="max-w-4xl mx-auto p-6 md:p-10 text-gray-900 dark:text-gray-100">
+    <main className="max-w-4xl mx-auto p-6 md:p-10 text-gray-900">
       <h1 className="mb-6">Privacy Policy</h1>
       <p className="text-sm text-gray-500 mb-12">Last updated: June 30, 2025</p>
 
@@ -10,7 +10,7 @@ export default function PrivacyPolicy() {
           href="https://www.usebrainstorm.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-indigo-600 dark:text-indigo-400 hover:underline"
+          className="text-indigo-600 hover:underline"
         >
           https://www.usebrainstorm.app/
         </a>{' '}
@@ -36,7 +36,7 @@ export default function PrivacyPolicy() {
             href="https://www.usebrainstorm.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-indigo-600 dark:text-indigo-400 hover:underline"
+            className="text-indigo-600 hover:underline"
           >
             https://www.usebrainstorm.app/
           </a>.
@@ -131,7 +131,7 @@ export default function PrivacyPolicy() {
       </ul>
       <p className="mb-12">
         To exercise any of these rights, please contact us at{' '}
-        <a href="mailto:usebrainstormai@gmail.com" className="text-indigo-600 dark:text-indigo-400 hover:underline">
+        <a href="mailto:usebrainstormai@gmail.com" className="text-indigo-600 hover:underline">
           usebrainstormai@gmail.com
         </a>.
       </p>
@@ -159,7 +159,7 @@ export default function PrivacyPolicy() {
       <h2 className="mt-12 mb-6">Contact Us</h2>
       <p className="mb-6">If you have questions about this Privacy Policy or your data, contact us:</p>
       <ul className="list-disc list-inside mb-12 space-y-2">
-        <li>Email: <a href="mailto:usebrainstormai@gmail.com" className="text-indigo-600 dark:text-indigo-400 hover:underline">usebrainstormai@gmail.com</a></li>
+        <li>Email: <a href="mailto:usebrainstormai@gmail.com" className="text-indigo-600 hover:underline">usebrainstormai@gmail.com</a></li>
       </ul>
     </main>
   );

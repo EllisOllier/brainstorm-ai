@@ -12,7 +12,10 @@ export default function Home() {
                  transition-colors duration-300 ease-in-out
                  text-center"
     >
-      {/* Logo */}
+      <header>
+        <Link href='/login'>Login</Link>
+        <Link href={'/dashboard'}>Dashboard</Link>
+      </header>
       <div className="flex justify-center mb-6">
         <Image
           src="/brainstorm-white-blue.svg"
@@ -46,7 +49,6 @@ export default function Home() {
             Terms & Conditions
           </Link>
         </div>
-
         <p className="mt-4">&copy; {new Date().getFullYear()} Brainstorm AI. All rights reserved.</p>
       </footer>
     </main>
