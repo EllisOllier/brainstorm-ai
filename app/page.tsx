@@ -51,8 +51,7 @@ export default function Home() {
   };
 
   return (
-    <div className="max-w-md mx-auto pt-16 px-4 text-center flex flex-col min-h-screen">
-      
+    <div className="max-w-md mx-auto pt-16 px-4 text-center flex flex-col min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
       {/* Logo */}
       <div className="flex justify-center mb-6">
         <Image
@@ -63,13 +62,13 @@ export default function Home() {
         />
       </div>
 
-      <h1 className="text-3xl font-bold mb-4">Turn your ideas into actionable plans</h1>
-      <p className="text-lg mb-6">
+      <h1 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Turn your ideas into actionable plans</h1>
+      <p className="text-lg mb-6 text-gray-700 dark:text-gray-300">
         Brainstorm with AI and instantly generate Notion-style project pages.
       </p>
 
       {submitted ? (
-        <p className="text-green-600">✅ Thanks for joining the waitlist!</p>
+        <p className="text-green-600 dark:text-green-400">✅ Thanks for joining the waitlist!</p>
       ) : (
         <form onSubmit={handleSubmit} className="flex flex-col gap-3">
           <input
@@ -78,7 +77,7 @@ export default function Home() {
             placeholder="Your name (optional)"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            className="p-2 border rounded"
+            className="p-2 border rounded bg-white dark:bg-gray-800 text-gray-900 dark:text-white border-gray-300 dark:border-gray-700"
           />
           <input
             type="email"
@@ -87,24 +86,24 @@ export default function Home() {
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="p-2 border rounded"
+            className="p-2 border rounded bg-white dark:bg-gray-800 text-gray-900 dark:text-white border-gray-300 dark:border-gray-700"
           />
           <button
             type="submit"
-            className="bg-black text-white py-2 rounded hover:opacity-90"
+            className="bg-black dark:bg-white text-white dark:text-black py-2 rounded hover:opacity-90"
           >
             Join the Waitlist
           </button>
-          {error && <p className="text-red-500 text-sm">{error}</p>}
+          {error && <p className="text-red-500 dark:text-red-400 text-sm">{error}</p>}
         </form>
       )}
 
-      <footer className="mt-auto pt-4 pb-4 text-sm text-gray-500 border-t border-gray-200 dark:border-gray-700">
+      <footer className="mt-auto pt-4 pb-4 text-sm text-gray-500 dark:text-gray-400 border-t border-gray-200 dark:border-gray-700">
         <div className="flex justify-center space-x-6">
-          <Link href="/privacy-policy" className="hover:text-blue-600">
+          <Link href="/privacy-policy" className="hover:text-blue-600 dark:hover:text-blue-400">
             Privacy Policy
           </Link>
-          <Link href="/terms-and-conditions" className="hover:text-blue-600">
+          <Link href="/terms-and-conditions" className="hover:text-blue-600 dark:hover:text-blue-400">
             Terms & Conditions
           </Link>
         </div>

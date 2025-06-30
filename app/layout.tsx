@@ -22,16 +22,10 @@ export const metadata : Metadata = {
   authors: [{ name: "Ellis Ollier", url: "https://ellisollier.com" }],
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className="dark">
+      <body className="bg-white dark:bg-gray-900 transition-colors duration-300">
         {children}
         <Analytics/>
         <SpeedInsights/>
