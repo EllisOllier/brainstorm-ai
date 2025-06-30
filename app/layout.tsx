@@ -16,7 +16,7 @@ export const metadata : Metadata = {
   title: "Brainstorm AI | Waitlist",
   description: "Brainstorm with AI and instantly generate Notion-style project pages. Join the waitlist now!",
   keywords: ["Brainstorm AI", "AI brainstorming", "waitlist", "Notion style pages"],
-  authors: [{ name: "Your Name", url: "https://yourwebsite.com" }],
+  authors: [{ name: "Ellis Ollier", url: "https://ellisollier.com" }],
 };
 
 export default function RootLayout({
