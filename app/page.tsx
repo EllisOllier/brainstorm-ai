@@ -99,7 +99,6 @@ export default function Home() {
         </form>
       )}
 
-      {/* Footer */}
       <footer className="mt-auto pt-4 pb-4 text-sm text-gray-500 border-t border-gray-200 dark:border-gray-700">
         <div className="flex justify-center space-x-6">
           <Link href="/privacy-policy" className="hover:text-blue-600">
