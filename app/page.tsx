@@ -8,14 +8,8 @@ export default function Home() {
     <main
       className="max-w-md mx-auto pt-16 px-4 flex flex-col min-h-screen
                  bg-white
-                 prose prose-lg prose-indigo
-                 transition-colors duration-300 ease-in-out
                  text-center"
     >
-      <header>
-        <Link href='/login'>Login</Link>
-        <Link href={'/dashboard'}>Dashboard</Link>
-      </header>
       <div className="flex justify-center mb-6">
         <Image
           src="/brainstorm-white-blue.svg"
@@ -33,7 +27,7 @@ export default function Home() {
       {/* Removed DarkModeToggle */}
 
       <footer
-        className="mt-auto pt-4 pb-4 text-sm border-t border-gray-200"
+        className="mt-auto pb-4 text-sm border-t border-gray-200"
       >
         <div className="flex justify-center space-x-6">
           <Link
