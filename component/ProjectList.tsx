@@ -22,7 +22,7 @@ export default function ProjectsList({ projects, userId }: ProjectsListProps) {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [showForm, setShowForm] = useState(false);
-  const [search, setSearch] = useState(""); // <-- Add search state
+  const [search, setSearch] = useState("");
 
   const createProject = async () => {
     // Can set loading here
@@ -112,7 +112,6 @@ export default function ProjectsList({ projects, userId }: ProjectsListProps) {
         </div>
       )}
 
-      {/* Search bar and Create button in a row */}
       <div className="flex items-center gap-4 mt-4 mb-6">
         <input
           type="text"
