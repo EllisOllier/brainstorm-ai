@@ -10,4 +10,4 @@ Brainstorm AI uses the following:
 - Vercel
 - Supabase
 - Lexical
-- GeminiAPI or similar (not implemented yet)
+- Gemini API or similar (not implemented yet)
