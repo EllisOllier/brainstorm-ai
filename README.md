@@ -7,5 +7,7 @@ Brainstorm AI uses the following:
 - NextJS
 - TailwindCSS
 - TypeScript
-- Vercel for Deployment
-- Supabase for Database
+- Vercel
+- Supabase
+- Lexical
+- GeminiAPI or similar (not implemented yet)
